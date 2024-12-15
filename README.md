@@ -1,13 +1,17 @@
-# Sending mail with JavaMailSender
+# Mails sturen met JavaMailServer
 
-This is a simple example project that shows how you can send mail with Spring's `JavaMailSender`.
+Dit is een simpel voorbeeldproject dat aantoont hoe de `JavaMailSender` klasse van Spring kan gebruikt worden.
 
-`SendMail` has a `CommandLineRunner` that sends out both a simple mail and a complicated mail.
+In `SendMail.java` vind je een `CommandLineRunner` die een simpele mail en een complexere (HTML) mail uitstuurt.
 
-`application.yaml` configures how to connect to the SMTP server. SMTP is the "Simple Mail Transfer Protocol",
-which is used for sending email.
+`application.yaml` configureert hoe we moeten verbinden met de SMTP-server. SMTP is het "Simple Mail Transfer Protocol".
+Dit is het protocol dat gebruikt wordt om e-mail te versturen over het Internet.
 
-We're using MailHog to test this out, see the `compose.yaml`. If you start it with Docker Compose
-you can see the emails at http://localhost:8025.
+We gebruiken MailHog om dit uit te testen. MailHog is een SMTP-server die je toelaat om alle verzonden mails te zien.
+De mails worden niet echt verzonden. In `compose.yaml` zie je hoe een mailhog container geconfigureerd wordt. Als je
+dit start met Docker Compose kan je alle mails zien op http://localhost:8025.
 
-For more info, check out this tutorial: https://www.baeldung.com/spring-email
+Meer info over `JavaMailSender`:
+
+- [Guide to Spring Email](https://www.baeldung.com/spring-email)
+- [Spring Reference documentatie van Email](https://docs.spring.io/spring-framework/reference/integration/email.html)
