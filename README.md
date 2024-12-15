@@ -1,4 +1,4 @@
-# Mails sturen met JavaMailServer
+# Mails sturen met JavaMailSender
 
 Dit is een simpel voorbeeldproject dat aantoont hoe de `JavaMailSender` klasse van Spring kan gebruikt worden.
 
